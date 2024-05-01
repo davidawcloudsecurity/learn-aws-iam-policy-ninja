@@ -140,6 +140,18 @@ It is not a deny but exclude and can be assume
 ```ruby
 
 ```
+## Enforce Policy Workflow
+```ruby
+1. Decision starts at DENY
+   1.1 What resource does the user require?
+2. Evaluate all applicable policies
+3. Is there an explicit DENY? No ==> Is there an ALLOW? No ==> Final decision=DENY
+   ||                                        ||
+   \/                                        \/
+   Yes                                       YES
+Final decision=DENY                      Final decision=ALLOW
+- [ ] Need to test allow something but add deny all if this is workable.
+```
 ## Tutorials
 https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
