@@ -6,8 +6,11 @@ https://awspolicygen.s3.amazonaws.com/policygen.html
 
 https://blog.awsfundamentals.com/aws-iam-policies-a-practical-approach
 
+https://aws.amazon.com/iam/resources/
+
 ## Best Practice
 https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+https://aws.amazon.com/iam/resources/best-practices/
 
 ## Basic
 Json-formatted documents, contain a statement that specifies:
