@@ -198,6 +198,8 @@ Create a home directory with s3 bucket using variable - https://youtu.be/y7-fAT3
 
 Create a limited administrator - https://youtu.be/y7-fAT3z8Lo?si=BNyJE10vCVfbXs2B&t=1554
 
+Grant conditional cross account access - https://youtu.be/y7-fAT3z8Lo?si=kujM7Mk2PzowT1BK&t=1969
+
 https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
 
 https://catalog.us-east-1.prod.workshops.aws/workshops/f3a3e2bd-e1d5-49de-b8e6-dac361842e76/en-US/basic-modules/30-iam/iam
