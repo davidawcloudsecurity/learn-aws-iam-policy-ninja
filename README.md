@@ -6,7 +6,7 @@ How to secure aws resource with iam roles and policy
 https://awspolicygen.s3.amazonaws.com/policygen.html
 
 ## Basic
-Json-formatted documents, contain a statement that specifies:
+`Jso`n-formatted documents, contain a statement that specifies:
 
 1. Which actions a principal can perform
 
