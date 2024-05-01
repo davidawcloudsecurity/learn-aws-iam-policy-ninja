@@ -2,14 +2,14 @@
 How to secure aws resource with iam roles and policy
 
 ## Tools
-Step 1: Know What Policy To Create
+Step 1: Know what policy to create
 
 https://awspolicygen.s3.amazonaws.com/policygen.html
 
-Step 2: Investigate What Resources Can Be Access
+Step 2: Investigate action/policies/resources Can Be Access
 https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
 
-Step 3: (Optional) 
+Step 3: (Optional) This display live updates as you add
 https://www.awsiamactions.io/generator
 
 ## Basic
