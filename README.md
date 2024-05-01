@@ -52,3 +52,37 @@ Principal here is referred to user/group or role attached
 <!-- Specific service-->
 "Principal":{"Service":"ec2.amazonaws.com"}
 ```
+## Action
+Describe the type of access that is allowed or denied
+
+Statements must include either an _Action or NotAction_
+```ruby
+<!-- EC2 action -->
+"Action":"ec2:StartInstances"
+
+<!-- IAM action -->
+"Action":"iam:ChangePassword"
+
+<!-- Amazon S3 action -->
+"Action":"s3:GetObject"
+
+<!-- Specific multiple values for the Action element -->
+"Action":["sqs:SendMessage", "sqs:ReceiveMessage"]
+or
+"Action":[
+  "sqs:SendMessage",
+  "sqs:ReceiveMessage"
+]
+
+<!-- wildcards (* or ?) in the action name. This covers create/delete/list/update -->
+"Action":"iam:*AccessKey*"
+```
+## Understanding NotAction
+It is not a deny but exclude and can be assume
+```ruby
+{
+  
+}
+```
+
+##Tutorials & Hands On Labs
