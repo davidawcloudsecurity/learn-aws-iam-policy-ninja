@@ -199,6 +199,28 @@ It is not a deny but exclude and can be assume
   ]
 }
 ```
+
+## StringNotLikeIFExist
+```ruby
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": "ec2:",
+    "Resource": "*"
+},
+{
+    "Effect": "Deny",
+    "Action": "ec2: RunInstances"
+    "Resource": "arn: aws ec2:*:012345678901:instance/*",
+    "Condition": {
+        "StringNotLikeIfExists": { "ec2: InstanceType": [
+            "t1.*", "t2.*", "m3.*"
+        ]
+    }
+  }
+}
+```
 ## Enforce Policy Workflow
 ```ruby
 1. Decision starts at DENY
