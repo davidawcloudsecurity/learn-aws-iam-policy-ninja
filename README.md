@@ -138,7 +138,44 @@ It is not a deny but exclude and can be assume
 ```
 ## Conditions
 ```ruby
-
+{
+"Version": "2012-10-17",
+"Statement":[{
+  "Sid": "AllowGroupToSeeBucketListInTheManagementConsole",
+  "Action": [
+    "s3:ListAllMyBuckets",
+    "s3:GetBucketLocation"
+  ], 
+  "Effect": "Allow",
+  "Resource": [
+    "arn:aws:s3:::*"
+  ]},
+  {"Sid": "AllowRootLevelListingOfThisBucketAndHomePrefix",
+  "Action": [
+    "s3:ListBucket"
+  ],
+  "Effect": "Allow",
+  "Resource": ["
+    arn:aws:53:::myBucket"
+  ],
+  "Condition":{"StringEquals": {"s3:prefix":["", "Home/"],"s3:delimiter":["/"]}}},
+  {"Sid": "AllowListBucketofASpecificUserPrefix",
+  "Action": [
+    "s3:ListBucket"
+  ],
+  "Effect": "Allow",
+  "Resource": [
+    "arn:aws:53:::myBucket"
+  ],
+  "Condition":{"StringLike":{"s3:prefix": ["Home/${aws:username}/*"]}}},
+  {"Sid":"AllowUserFullAccess toJustSpecificUserPrefix",
+  "Action": ["s3:*"],
+  "Effect":"Allow",
+  "Resource": [
+    "arn:aws:53:::myBucket/Home/${aws:username]",
+    "arn:aws:s3:::myBucket/Home/${aws:username}/*"
+  ]}
+}
 ```
 ## Enforce Policy Workflow
 ```ruby
