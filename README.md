@@ -14,6 +14,8 @@ Step 3: (Optional) This displays live updates as you add. Condition not working.
 
 https://www.awsiamactions.io/generator
 
+Json validate - https://jsonlint.com
+
 ## Basic
 Json-formatted documents contain a statement that specifies:
 
@@ -25,6 +27,7 @@ Json-formatted documents contain a statement that specifies:
 
 ```ruby
 {
+  "Version": "2012-10-17",
   "Statement":[{
     "Effect":"<allow/deny>",
     "Principal":"<arn/iam/sts/role/user>",
@@ -35,7 +38,7 @@ Json-formatted documents contain a statement that specifies:
         "key":"<value>"
       }
     }
-  ]
+  }]
 }
 ```
 ## Principal
