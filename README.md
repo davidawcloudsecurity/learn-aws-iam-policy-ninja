@@ -177,6 +177,28 @@ It is not a deny but exclude and can be assume
   ]}
 }
 ```
+```ruby
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "NotAction": ["iam: *","ec2: RunInstances"],
+    "Resource":"*"},
+  {
+    "Effect": "Allow",
+    "Action": "ec2: RunInstances",
+    "NotResource":"arn:aws:ec2:*: 012345678912: instance/"},
+  {
+    "Effect": "Allow",
+    "Action": "ec2: RunInstances",
+    "Resource": [
+        "arn: aws ec2:us-east-2:012345678912 :instance/", "arn:aws: ec2:eu-west-1: 012345678912: instance/*"],
+    "Condition": {
+        "StringLike": {"ec2: InstanceType": ["t1.*","t2.*", "m3.*"]}
+    }
+  ]
+}
+```
 ## Enforce Policy Workflow
 ```ruby
 1. Decision starts at DENY
