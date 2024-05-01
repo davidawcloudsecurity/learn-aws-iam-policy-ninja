@@ -91,8 +91,26 @@ It is not a deny but exclude and can be assume
   
 }
 ```
+## Resource
+```ruby
+<-- S3 Bucket -->
+"Resource":"arn:aws:s3:::my_corporate_bucket/*"
 
+<-- Amazon SQS queue-->
+"Resource":"arn:aws:sqs:us-west-2:123456789012:queue1"
+
+<-- Multiple Amazon DynamoDB tables -->
+"Resource":[
+  "arn:aws:dynamodb:us-west-2:123456789012:table/books_table",
+  "arn:aws:dynamodb:us-west-2:123456789012:table/magazines_table"
+]
+
+<-- All EC2 instances for an account in a region -->
+"Resource":"arn:aws: ec2:us-east-1:123456789012:instance/*"
+```
 ## Tutorials & Hands On Labs
 Tutorials - https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
 Labs - https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
+https://catalog.us-east-1.prod.workshops.aws/workshops/f3a3e2bd-e1d5-49de-b8e6-dac361842e76/en-US/basic-modules/30-iam/iam
+https://dev.to/aws-builders/hands-on-lab-introduction-to-iam-6ha
