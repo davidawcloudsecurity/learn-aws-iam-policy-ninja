@@ -85,4 +85,8 @@ It is not a deny but exclude and can be assume
 }
 ```
 
-##Tutorials & Hands On Labs
+## Tutorials & Hands On Labs
+
+Tutorials - https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
+
+Labs - https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
