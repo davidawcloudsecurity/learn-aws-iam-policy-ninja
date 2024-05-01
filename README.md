@@ -237,6 +237,10 @@ Final decision=DENY                      Final decision=ALLOW
 ## Troubleshooting
 https://youtu.be/y7-fAT3z8Lo?si=sONapM68KZ1ISl-p&t=3072
 
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html
+
+Policy Simulator - https://policysim.aws.amazon.com/home/index.jsp
+
 ## Tutorials
 https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
