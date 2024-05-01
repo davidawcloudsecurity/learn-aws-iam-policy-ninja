@@ -157,6 +157,8 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
 ## Hands On Labs
 
+How to create s3 bucket with variable - https://youtu.be/y7-fAT3z8Lo?si=x3cZzTdVT2Q3zZTY&t=1251
+
 https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
 
 https://catalog.us-east-1.prod.workshops.aws/workshops/f3a3e2bd-e1d5-49de-b8e6-dac361842e76/en-US/basic-modules/30-iam/iam
