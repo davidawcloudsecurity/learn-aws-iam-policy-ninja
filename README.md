@@ -10,18 +10,18 @@ Step 2: Investigate action/policies/resources Can Be Access
 
 https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
 
-Step 3: (Optional) This display live updates as you add. Conditions not working.
+Step 3: (Optional) This displays live updates as you add. Condition not working.
 
 https://www.awsiamactions.io/generator
 
 ## Basic
-Json-formatted documents, contain a statement that specifies:
+Json-formatted documents contain a statement that specifies:
 
 1. What actions and by who (principal) can perform
 
 2. Which resources can be accessed at which region by which account
 
-3. Those actions, principals and resource can be access only if condition or conditions are met. (e.g AND or OR)
+3. Those actions, principals, and resources can be accessed only if conditions or conditions are met. (e.g AND or OR)
 
 ```ruby
 {
@@ -40,9 +40,9 @@ Json-formatted documents, contain a statement that specifies:
 ```
 ## Principal
 Examples of an entity that is allowed or denied access to a resource
-Principal here is referred to user/group or role attached
+The principal here is referred to the user/group or role attached
 ```ruby
-<!-- Everyone (anyone with no reference) Similar to Power User but much powerful -->
+<!-- Everyone (anyone with no reference) Similar to Power User but much more powerful -->
 "Principal":"AWS":"*.*"
 
 <!-- Specific account or accounts -->
@@ -188,8 +188,8 @@ It is not a deny but exclude and can be assume
     "Resource":"*"},
   {
     "Effect": "Allow",
-    "Action": "ec2: RunInstances",
-    "NotResource":"arn:aws:ec2:*: 012345678912: instance/"},
+    "Action": "ec2:RunInstances",
+    "NotResource":"arn:aws:ec2:*:012345678912:instance/"},
   {
     "Effect": "Allow",
     "Action": "ec2: RunInstances",
