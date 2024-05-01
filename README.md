@@ -1,25 +1,25 @@
 # learn-aws-iam-policy-ninja
 How to secure aws resource with iam roles and policy
 
-## Resources
+## Tools
+Step 1: Know What Policy To Create
+
 https://awspolicygen.s3.amazonaws.com/policygen.html
 
-https://blog.awsfundamentals.com/aws-iam-policies-a-practical-approach
+Step 2: Investigate What Resources Can Be Access
+https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
 
-https://aws.amazon.com/iam/resources/
-
-https://blog.awsfundamentals.com/iam-policies-chatgpt-vs-github-copilot-vs-aws-policy-generator
-
-## Best Practice
-https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
-https://aws.amazon.com/iam/resources/best-practices/
+Step 3: (Optional) 
+https://www.awsiamactions.io/generator
 
 ## Basic
 Json-formatted documents, contain a statement that specifies:
 
-1. Which actions a principal can perform
+1. What actions and by who (principal) can perform
 
-2. Which resources can be accessed
+2. Which resources can be accessed at which region by which account
+
+3. Those actions, principals and resource can be access only if condition or conditions are met. (e.g AND or OR)
 
 ```ruby
 {
@@ -136,11 +136,29 @@ It is not a deny but exclude and can be assume
 <-- All EC2 instances for an account in a region -->
 "Resource":"arn:aws: ec2:us-east-1:123456789012:instance/*"
 ```
-## Tutorials & Hands On Labs
-Tutorials - https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
+## Conditions
+```ruby
 
-Labs - https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
+```
+## Tutorials
+https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
+
+## Hands On Labs
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
 
 https://catalog.us-east-1.prod.workshops.aws/workshops/f3a3e2bd-e1d5-49de-b8e6-dac361842e76/en-US/basic-modules/30-iam/iam
 
 https://dev.to/aws-builders/hands-on-lab-introduction-to-iam-6ha
+
+## Resource
+https://blog.awsfundamentals.com/aws-iam-policies-a-practical-approach
+
+https://aws.amazon.com/iam/resources/
+
+https://blog.awsfundamentals.com/iam-policies-chatgpt-vs-github-copilot-vs-aws-policy-generator
+
+## Best Practice
+https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+
+https://aws.amazon.com/iam/resources/best-practices/
