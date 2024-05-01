@@ -140,5 +140,7 @@ It is not a deny but exclude and can be assume
 Tutorials - https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
 Labs - https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
+
 https://catalog.us-east-1.prod.workshops.aws/workshops/f3a3e2bd-e1d5-49de-b8e6-dac361842e76/en-US/basic-modules/30-iam/iam
+
 https://dev.to/aws-builders/hands-on-lab-introduction-to-iam-6ha
