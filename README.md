@@ -8,6 +8,8 @@ https://blog.awsfundamentals.com/aws-iam-policies-a-practical-approach
 
 https://aws.amazon.com/iam/resources/
 
+https://blog.awsfundamentals.com/iam-policies-chatgpt-vs-github-copilot-vs-aws-policy-generator
+
 ## Best Practice
 https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 https://aws.amazon.com/iam/resources/best-practices/
@@ -88,7 +90,33 @@ or
 It is not a deny but exclude and can be assume
 ```ruby
 {
-  
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NotAllowToRunInstances",
+      "NotAction": [
+        "ec2:RunInstances"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
+```
+## Understanding Deny
+```ruby
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyToAllowToRunInstances",
+      "Action": [
+        "ec2:RunInstances"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ]
 }
 ```
 ## Resource
