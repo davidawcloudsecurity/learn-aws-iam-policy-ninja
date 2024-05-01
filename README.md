@@ -7,7 +7,12 @@ https://awspolicygen.s3.amazonaws.com/policygen.html
 
 ## Basic
 Json-formatted documents, contain a statement that specifies:
-```ruby
+
 1. Which actions a principal can perform
-2. Which resources can be accessed
+
+2. 2. Which resources can be accessed
+
+```ruby
+test
+
 ```
