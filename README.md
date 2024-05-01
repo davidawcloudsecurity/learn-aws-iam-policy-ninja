@@ -139,6 +139,9 @@ It is not a deny but exclude and can be assume
 "Resource":"arn:aws: ec2:us-east-1:123456789012:instance/*"
 ```
 ## Conditions
+https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#ec2-supported-iam-actions-resources
 ```ruby
 {
 "Version": "2012-10-17",
