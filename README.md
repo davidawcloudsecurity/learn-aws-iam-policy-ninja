@@ -233,6 +233,10 @@ It is not a deny but exclude and can be assume
 Final decision=DENY                      Final decision=ALLOW
 - [ ] Need to test allow something but add deny all if this is workable.
 ```
+
+## Troubleshooting
+https://youtu.be/y7-fAT3z8Lo?si=sONapM68KZ1ISl-p&t=3072
+
 ## Tutorials
 https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
