@@ -194,7 +194,9 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorials.html
 
 ## Hands On Labs
 
-How to create s3 bucket with variable - https://youtu.be/y7-fAT3z8Lo?si=x3cZzTdVT2Q3zZTY&t=1251
+Create a home directory with s3 bucket using variable - https://youtu.be/y7-fAT3z8Lo?si=x3cZzTdVT2Q3zZTY&t=1251
+
+Create a limited administrator - https://youtu.be/y7-fAT3z8Lo?si=BNyJE10vCVfbXs2B&t=1554
 
 https://catalog.us-east-1.prod.workshops.aws/workshops/8efd4edb-2b91-49fd-b1b8-3e3b5e71aa03/en-US/iam
 
