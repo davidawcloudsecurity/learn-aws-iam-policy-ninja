@@ -235,7 +235,9 @@ Final decision=DENY                      Final decision=ALLOW
 ```
 
 ## Troubleshooting
-https://youtu.be/y7-fAT3z8Lo?si=sONapM68KZ1ISl-p&t=3072
+-[ ] https://youtu.be/y7-fAT3z8Lo?si=sONapM68KZ1ISl-p&t=3072
+
+-[ ] decoding error message - https://youtu.be/y7-fAT3z8Lo?si=ioIGLqEY-jIEUiqM&t=3192
 
 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html
 
