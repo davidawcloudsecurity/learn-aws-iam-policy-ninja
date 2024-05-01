@@ -1,2 +1,2 @@
 # learn-aws-iam-policy-ninja
-How to create iam role and policy like a ninja
+How to secure aws resource with iam roles and policy
