@@ -10,9 +10,20 @@ Json-formatted documents, contain a statement that specifies:
 
 1. Which actions a principal can perform
 
-2. 2. Which resources can be accessed
+2. Which resources can be accessed
 
 ```ruby
-test
-
+{
+  "Statement":[{
+    "Effect":"<allow/deny>",
+    `"Principal"`:"<arn/iam/sts/role/user>",
+    "Action":"<action>",
+    "Resource":"<arn>",
+    "Condition":{
+      "<condition>":{
+        "key":"<value>"
+      }
+    }
+  ]
+}
 ```
