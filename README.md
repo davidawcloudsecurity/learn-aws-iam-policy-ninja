@@ -16,6 +16,8 @@ https://www.awsiamactions.io/generator
 
 Json validate - https://jsonlint.com
 
+AWS CLI IAM CheatSheet - https://dev.to/aws-builders/aws-iam-cli-a-cheatsheet-3g7o
+
 ## Basic
 Json-formatted documents contain a statement that specifies:
 
