@@ -3,25 +3,30 @@ How to secure aws resource with iam roles and policy
 
 ## Quickstart
 https://aws.amazon.com/blogs/security/writing-iam-policies-how-to-grant-access-to-an-amazon-s3-bucket/
+
+Statement belows allow role to list all the buckets in the s3 account but only allow any s3 actions to be perform on the listed s3 bucket.
 ```ruby
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": ["s3:ListBucket"],
-      "Resource": ["arn:aws:s3:::test"]
-    },
-    {
-      "Effect": "Allow",
-      "Action": [
-        "s3:PutObject",
-        "s3:GetObject",
-        "s3:DeleteObject"
-      ],
-      "Resource": ["arn:aws:s3:::test/*"]
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::allow-vapt-scanned-results-02",
+                "arn:aws:s3:::allow-vapt-scanned-results-02/*"
+            ]
+        }
+    ]
 }
 ```
 
